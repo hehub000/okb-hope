@@ -17,7 +17,7 @@ const firebaseConfig = JSON.parse(process.env.NEXT_PUBLIC_SERVICE_ACCOUNT!);
 const app = initializeApp(firebaseConfig);
 
 // Initialize Cloud Firestore through Firebase
-const db = getFirestore(app);
+const db = getFirestore(app, "okbtestdata");
 
 const providerG = new GoogleAuthProvider();
 // facebook: new FacebookAuthProvider(),
